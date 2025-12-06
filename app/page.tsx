@@ -36,12 +36,12 @@ export default function Home() {
 
             {/* Main Heading */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 leading-[1.1] font-serif tracking-tight text-white drop-shadow-lg">
-              Discover <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-200">Rare</span> & Authentic Collectibles
+              Discover <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-500">Indian</span> Rare Coins & Notes
             </h1>
 
             {/* Description */}
             <p className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-10 sm:mb-12 leading-relaxed max-w-2xl mx-auto font-light drop-shadow-md">
-              Explore our curated collection of certified rare coins and vintage banknotes. Verified by experts for the serious collector.
+              Explore our curated collection of British India, Republic India, and Ancient coins. Verified by experts for the serious collector.
             </p>
 
             {/* Call-to-Action Buttons */}
@@ -112,28 +112,28 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-6 lg:gap-8">
             {[
               {
-                title: 'Ancient Coins',
-                desc: 'Roman, Greek & Byzantine',
-                href: '/buy?category=coin&rarity=extremely-rare',
-                image: '/collection_ancient_coins.png'
+                title: 'British India',
+                desc: 'Victoria, Edward & George',
+                href: '/buy?category=coin&country=British%20India',
+                image: 'collection_ancient_coins.png'
+              },
+              {
+                title: 'Republic India',
+                desc: 'Rare 1950-1980 Issues',
+                href: '/buy?category=coin&country=Republic%20India',
+                image: 'collection_gold_sovereigns.png'
+              },
+              {
+                title: 'Ancient & Mughal',
+                desc: 'Punch-marked to Mughals',
+                href: '/buy?category=coin&country=Ancient%20India',
+                image: 'collection_investment_grade.png'
               },
               {
                 title: 'Rare Banknotes',
-                desc: 'Historic paper currency',
-                href: '/buy?category=note&rarity=rare',
-                image: '/collection_rare_banknotes.png'
-              },
-              {
-                title: 'Gold Sovereigns',
-                desc: 'British & world gold coins',
-                href: '/buy?category=coin&rarity=very-rare',
-                image: '/collection_gold_sovereigns.png'
-              },
-              {
-                title: 'Investment Grade',
-                desc: 'High-value collectibles',
-                href: '/buy?rarity=very-rare',
-                image: '/collection_investment_grade.png'
+                desc: 'Historic Indian Paper Money',
+                href: '/buy?category=note',
+                image: 'collection_rare_banknotes.png'
               },
             ].map((collection, index) => (
               <Link
@@ -161,7 +161,7 @@ export default function Home() {
                   </p>
 
                   {/* Hover Indicator */}
-                  <div className="mt-4 w-8 h-1 bg-primary-500 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                  <div className="mt-4 w-8 h-1 bg-yellow-500 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                 </div>
               </Link>
             ))}
@@ -204,7 +204,7 @@ export default function Home() {
         )}
 
         {/* Best Sellers */}
-        {bestSellers.length > 0 && (
+        {/* {bestSellers.length > 0 && (
           <section>
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-400/10 border border-yellow-400/20 text-yellow-600 text-xs font-medium mb-4">
@@ -229,10 +229,10 @@ export default function Home() {
               ))}
             </div>
           </section>
-        )}
+        )} */}
 
         {/* New Arrivals */}
-        {newArrivals.length > 0 && (
+        {/* {newArrivals.length > 0 && (
           <section>
             <div className="text-center mb-12">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-400/10 border border-yellow-400/20 text-yellow-600 text-xs font-medium mb-4">
@@ -257,10 +257,10 @@ export default function Home() {
               ))}
             </div>
           </section>
-        )}
+        )} */}
 
         {/* Featured Products */}
-        <section>
+        {/* <section>
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-400/10 border border-yellow-400/20 text-yellow-600 text-xs font-medium mb-4">
               <Star className="w-3 h-3 fill-yellow-400 text-yellow-400" />
@@ -283,7 +283,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Trust & Social Proof - Premium Dark Design */}
         <section className="relative py-16 sm:py-24 overflow-hidden">

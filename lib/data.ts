@@ -11,7 +11,7 @@ export const sampleListings: Listing[] = [
     condition: 'excellent',
     year: 1918,
     country: 'British India',
-    images: ['george-v-coin.jpg'],
+    images: ['/george-v-coin.jpg'],
     seller: {
       name: 'Rajesh Numismatics',
       email: 'rajesh@example.com',
@@ -22,24 +22,6 @@ export const sampleListings: Listing[] = [
     rarity: 'rare',
   },
   {
-    id: '2',
-    title: '1917 King George V 1 Rupee Note',
-    description: 'The legendary 1917 One Rupee banknote, the very first 1 Rupee note issued in India. This specific note bears the signature of M.M.S. Gubbay. It was introduced as a wartime measure due to silver shortages. Includes the original booklet perforation on the left. An extremely rare survivor in this condition.',
-    price: 25000,
-    category: 'note',
-    condition: 'very-good',
-    year: 1917,
-    country: 'British India',
-    images: ['/images/note_1917_1rupee.jpg'],
-    seller: {
-      name: 'Heritage Notes India',
-      email: 'info@heritagenotes.in',
-    },
-    createdAt: '2024-01-20',
-    status: 'available',
-    rarity: 'extremely-rare',
-  },
-  {
     id: '3',
     title: '1862 Victoria Queen One Rupee',
     description: 'A historic 1862 Victoria Queen One Rupee, the first coin series issued directly under the British Crown after the East India Company rule ended. This is the "5 dots" variety, indicating the specific die used. The coin features the "Victoria Queen" legend, which was later changed to "Victoria Empress" in 1877.',
@@ -48,7 +30,7 @@ export const sampleListings: Listing[] = [
     condition: 'excellent',
     year: 1862,
     country: 'British India',
-    images: ['victoris-queen-1rs-coin.jpg'],
+    images: ['/victoris-queen-1rs-coin.jpg'],
     seller: {
       name: 'Royal Coins',
       email: 'sales@royalcoins.in',
@@ -67,7 +49,7 @@ export const sampleListings: Listing[] = [
     condition: 'mint',
     year: 1970,
     country: 'Republic India',
-    images: ['food-for-all.jpg'],
+    images: ['/food-for-all.jpg'],
     seller: {
       name: 'India Mint Collections',
       email: 'mint@example.com',
@@ -85,7 +67,7 @@ export const sampleListings: Listing[] = [
     condition: 'very-good',
     year: 1580,
     country: 'Mughal Empire',
-    images: ['akbar-silver-coin.jpg'],
+    images: ['/akbar-silver-coin.jpg'],
     seller: {
       name: 'Ancient Treasures',
       email: 'contact@ancienttreasures.in',
@@ -93,25 +75,6 @@ export const sampleListings: Listing[] = [
     createdAt: '2024-02-15',
     status: 'available',
     rarity: 'very-rare',
-  },
-  {
-    id: '6',
-    title: '1939 George VI One Rupee - Silver',
-    description: 'The 1939 George VI One Rupee is one of the key dates in the British India series. With the outbreak of WWII, silver content was reduced in later years, making this the last pure silver issue of its type. Highly sought after by investors and collectors alike for its scarcity and historical significance.',
-    price: 450000,
-    category: 'coin',
-    condition: 'excellent',
-    year: 1939,
-    country: 'British India',
-    images: ['/images/coin_1939_rupee.jpg'],
-    seller: {
-      name: 'Elite Numismatics',
-      email: 'elite@rarecoins.in',
-      phone: '+91-91234-56789',
-    },
-    createdAt: '2024-02-20',
-    status: 'available',
-    rarity: 'extremely-rare',
   },
   {
     id: '7',
@@ -122,7 +85,7 @@ export const sampleListings: Listing[] = [
     condition: 'mint',
     year: 2023,
     country: 'Republic India',
-    images: ['fancy-786-100rs-note.jpg'],
+    images: ['/fancy-786-100rs-note.jpg'],
     seller: {
       name: 'Lucky Notes',
       email: 'lucky@notes.in',
@@ -140,7 +103,7 @@ export const sampleListings: Listing[] = [
     condition: 'excellent',
     year: 1954,
     country: 'Republic India',
-    images: ['horse-coin.jpg'],
+    images: ['/horse-coin.jpg'],
     seller: {
       name: 'Desi Coins',
       email: 'info@desicoins.com',
@@ -159,7 +122,7 @@ export const sampleListings: Listing[] = [
     condition: 'very-good',
     year: 1944,
     country: 'British India',
-    images: ['british-10rs-note.jpg'],
+    images: ['/british-10rs-note.jpg'],
     seller: {
       name: 'Vintage Paper',
       email: 'sales@vintagepaper.in',
@@ -177,7 +140,7 @@ export const sampleListings: Listing[] = [
     condition: 'very-good',
     year: -300,
     country: 'Ancient India',
-    images: ['maurya-punch-coin.jpg'],
+    images: ['/maurya-punch-coin.jpg'],
     seller: {
       name: 'History Circle',
       email: 'info@historycircle.in',
@@ -196,7 +159,7 @@ export const sampleListings: Listing[] = [
     condition: 'mint',
     year: 1985,
     country: 'Republic India',
-    images: ['indira-gandhi-50-paise1.jpg'],
+    images: ['/indira-gandhi-50-paise1.jpg'],
     seller: {
       name: 'Coin Bazaar',
       email: 'info@coinbazaar.in',
@@ -214,7 +177,7 @@ export const sampleListings: Listing[] = [
     condition: 'excellent',
     year: 2015,
     country: 'Republic India',
-    images: ['1000-rs-note.jpg'],
+    images: ['/1000-rs-note.jpg'],
     seller: {
       name: 'Modern Collections',
       email: 'info@moderncollections.in',

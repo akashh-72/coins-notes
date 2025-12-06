@@ -105,16 +105,18 @@ export default function ProductCard({ listing }: ProductCardProps) {
           {/* Price */}
           <div className="space-y-1">
             <div className="flex items-baseline gap-2 sm:gap-3 flex-wrap">
-              <span className="text-xl sm:text-2xl font-bold text-neutral-900">${listing.price.toLocaleString()}</span>
+              <span className="text-xl sm:text-2xl font-bold text-neutral-900">
+                {new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(listing.price)}
+              </span>
               {discount > 0 && (
                 <span className="text-base sm:text-lg text-neutral-500 line-through">
-                  ${(listing.price * 1.2).toLocaleString()}
+                  {new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(listing.price * 1.2)}
                 </span>
               )}
             </div>
             {discount > 0 && (
               <p className="text-xs sm:text-sm font-medium text-green-600">
-                Was ${(listing.price * 1.2).toLocaleString()} • Save {discount}%
+                Was {new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(listing.price * 1.2)} • Save {discount}%
               </p>
             )}
           </div>

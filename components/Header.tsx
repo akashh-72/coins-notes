@@ -14,7 +14,7 @@ export default function Header() {
   const { getTotalItems, wishlist } = useCart();
 
   const announcements = [
-    { icon: Truck, text: "Free Shipping on orders above $500" },
+    { icon: Truck, text: "Free Shipping on orders above ₹500" },
     { icon: Shield, text: "Verified Authentic Products" },
     { icon: RotateCcw, text: "30-Day Easy Returns" }
   ];
@@ -43,7 +43,7 @@ export default function Header() {
           <div className="hidden md:flex items-center justify-center gap-8 py-2.5">
             <div className="flex items-center gap-2.5 group cursor-default hover:opacity-100 opacity-90 transition-opacity">
               <Truck className="w-4 h-4 text-white/90" />
-              <span className="text-xs font-medium tracking-wide">Free Shipping on orders above $500</span>
+              <span className="text-xs font-medium tracking-wide">Free Shipping on orders above ₹500</span>
             </div>
             <span className="text-white/20 text-lg font-light">•</span>
             <div className="flex items-center gap-2.5 group cursor-default hover:opacity-100 opacity-90 transition-opacity">
@@ -65,8 +65,8 @@ export default function Header() {
                 <div
                   key={index}
                   className={`absolute inset-0 flex items-center justify-center gap-2.5 transition-all duration-500 transform ${index === currentAnnouncement
-                      ? 'opacity-100 translate-y-0'
-                      : 'opacity-0 translate-y-4'
+                    ? 'opacity-100 translate-y-0'
+                    : 'opacity-0 translate-y-4'
                     }`}
                 >
                   <Icon className="w-3.5 h-3.5 text-white/90" />

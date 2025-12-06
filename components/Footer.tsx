@@ -80,19 +80,19 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-gray-300">
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <a href="mailto:info@rarecoins.com" className="hover:text-white transition-colors break-all">
-                  info@rarecoins.com
+                <a href="mailto:info@rarecoins.in" className="hover:text-white transition-colors break-all">
+                  info@rarecoins.in
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <a href="tel:+15551234567" className="hover:text-white transition-colors">
-                  +1 (555) 123-4567
+                <a href="tel:+919876543210" className="hover:text-white transition-colors">
+                  +91 98765 43210
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>123 Collector Street<br />New York, NY 10001</span>
+                <span>123 Collector Street<br />Mumbai, MH 400001</span>
               </li>
             </ul>
           </div>

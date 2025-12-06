@@ -139,15 +139,15 @@ export default function BuyPage() {
                 <input
                   type="range"
                   min="0"
-                  max="20000"
-                  step="100"
+                  max="500000"
+                  step="1000"
                   value={priceRange[1]}
                   onChange={(e) => setPriceRange([priceRange[0], parseInt(e.target.value)])}
-                  className="w-full"
+                  className="w-full accent-yellow-500"
                 />
                 <div className="flex justify-between text-sm font-semibold text-neutral-700">
-                  <span>${priceRange[0].toLocaleString()}</span>
-                  <span>${priceRange[1].toLocaleString()}</span>
+                  <span>{new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(priceRange[0])}</span>
+                  <span>{new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(priceRange[1])}</span>
                 </div>
               </div>
             </div>

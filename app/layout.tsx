@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -17,8 +17,7 @@ export const metadata: Metadata = {
   description: "Premium platform for buying and selling rare coins and notes. Discover authentic collectibles from around the world.",
 };
 
-// ✅ FIX: Use Viewport type instead of Metadata
-export const viewport: Viewport = {
+export const viewport: Metadata = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
@@ -44,3 +43,4 @@ export default function RootLayout({
     </html>
   );
 }
+

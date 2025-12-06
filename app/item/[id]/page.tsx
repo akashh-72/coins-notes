@@ -123,11 +123,13 @@ export default function ItemDetailPage() {
             {/* Price */}
             <div className="mb-8 pb-8 border-b border-neutral-200">
               <div className="flex flex-wrap items-baseline gap-3 sm:gap-4 mb-3">
-                <span className="text-4xl sm:text-5xl font-bold text-neutral-900">${listing.price.toLocaleString()}</span>
+                <span className="text-4xl sm:text-5xl font-bold text-neutral-900">
+                  {new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(listing.price)}
+                </span>
                 {discount > 0 && (
                   <>
                     <span className="text-xl sm:text-2xl text-neutral-500 line-through">
-                      ${(listing.price * 1.2).toLocaleString()}
+                      {new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(listing.price * 1.2)}
                     </span>
                     <span className="bg-green-100 text-green-700 text-sm font-bold px-3 py-1.5 rounded-md">
                       {discount}% OFF
@@ -137,7 +139,7 @@ export default function ItemDetailPage() {
               </div>
               {discount > 0 && (
                 <p className="text-base sm:text-lg text-green-600 font-semibold">
-                  You save ${((listing.price * 1.2) - listing.price).toLocaleString()}
+                  You save {new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format((listing.price * 1.2) - listing.price)}
                 </p>
               )}
             </div>
@@ -198,8 +200,8 @@ export default function ItemDetailPage() {
                 <button
                   onClick={() => isInWishlist(listing.id) ? removeFromWishlist(listing.id) : addToWishlist(listing.id)}
                   className={`p-4 border-2 rounded-lg transition-colors ${isInWishlist(listing.id)
-                      ? 'border-red-500 text-red-500 bg-red-50'
-                      : 'border-neutral-300 text-neutral-600 hover:border-red-500 hover:text-red-500'
+                    ? 'border-red-500 text-red-500 bg-red-50'
+                    : 'border-neutral-300 text-neutral-600 hover:border-red-500 hover:text-red-500'
                     }`}
                 >
                   <Heart className={`w-6 h-6 ${isInWishlist(listing.id) ? 'fill-current' : ''}`} />
@@ -211,9 +213,9 @@ export default function ItemDetailPage() {
             <div className="bg-neutral-50 rounded-lg p-6 space-y-3">
               {[
                 '100% Authentic Guaranteed',
-                'Free Insured Shipping on orders over $500',
+                'Free Insured Shipping across India',
                 'Secure Payment Processing',
-                '30-Day Return Policy',
+                '7-Day Return Policy',
                 'Certificate of Authenticity Included',
               ].map((feature, index) => (
                 <div key={index} className="flex items-center gap-3 text-base">
